@@ -29,20 +29,15 @@ class Form extends Component {
 
   render() {
     return (
-      <div>
+      <div className="form">
         <h1>Post a new!</h1>
-        <form onSubmit={this.addNew}>
-          <label>Author:</label>
-          <input type="text" name="author" placeholder="Author's name" />
-          <label>Title:</label>
-          <input type="text" name="title" placeholder="Title" />
-          <label>Description:</label>
-          <input type="text" name="description" placeholder="Description" />
-          <label>URL New:</label>
-          <input type="url" name="url" placeholder="URL New" />
-          <label>URL Img:</label>
-          <input type="url" name="urlToImage" placeholder="URL Image" />
-          <input type="submit" value="Add a New!" />
+        <form className="form--inside" onSubmit={this.addNew}>
+          <label>Author: <input type="text" name="author" placeholder="Author's name" /></label>
+          <label>Title: <input type="text" name="title" placeholder="Title" /></label>
+          <label>Description: <input type="text" name="description" placeholder="Description" /></label>
+          <label>URL New: <input type="text" name="url" placeholder="URL" /></label>
+          <label>URL Img: <input type="url" name="urlToImage" placeholder="URL Image" /></label>
+          <input type="submit" value="Add a New!" className="button" />
         </form>
       </div>
     );

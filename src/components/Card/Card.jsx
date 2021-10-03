@@ -8,15 +8,14 @@ class Card extends Component {
     }
   }
   render() {
-    const { title, content, description, publishedAt, url, urlToImage } = this.props.info
+    const { title, content, description, url, urlToImage } = this.props.info
     return (
-      <div>
-        <a href={url} target="_blank"><h1>{title}</h1></a>
-        <button onClick={this.props.remove}>Delete new!</button>
-        <p>{description}</p>
-        <p>{content}</p>
-        <p>{publishedAt}</p>
+      <div className="card">
+        <a href={url} target="_blank" className="card--title">{title}</a>
+        <p className="card--description">{description}</p>
+        <p className="card--content">{content}</p>
         <img src={urlToImage} alt={title} />
+        <button className="button" onClick={this.props.remove}>Delete this!</button>
       </div>)
   }
 }

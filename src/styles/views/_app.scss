@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #202223;
+    color: white
+}
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    background-color: #F5C518;
+    border: 1px solid #F5C518;
+    border-radius: 5px;
+    color: white;
+    transition: 0.7s;
+    cursor: pointer;
+    padding: 0 21px;
+    outline: none;
+    border: none;
+    margin: 0 5px;
+    height: 28px;
+
+}

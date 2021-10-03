@@ -15,7 +15,7 @@ class ListNews extends Component {
   }
   async componentDidMount() {
     
-    const resp = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=entertainment&pageSize=5&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`);
+    const resp = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&pageSize=20&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`);
     const data = await resp.data.articles;
     // Once we retreive the data we want from the API, we add it up to our current state
     let newState = this.state.news.concat(data)
@@ -35,10 +35,10 @@ class ListNews extends Component {
   }
   render() {
     return (
-      <section>
-        <h1>News List</h1>
-        <h3>Here you can find all the news related to entertainment category!</h3>
-        <article>
+      <section className="listNews">
+        <h3>News List</h3>
+        <p className="listNews--p">Here you can find all the news related to entertainment category!</p>
+        <article className="listNews--card">
           {this.paintNews()}
         </article>
       </section>)
