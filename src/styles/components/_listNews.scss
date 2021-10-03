@@ -1,0 +1,42 @@
+.listNews {
+    padding-bottom: 40px;
+
+}
+.listNews--p {
+    font-size: 0.8em;
+}
+
+// Media Queries
+// TABLET
+@media (min-width: 769px) {
+    .listNews {
+        &--card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .listNews {
+        &--card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: auto
+        }
+    }
+}
+@media (min-width: 1920px) {
+    .listNews {
+        &--card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        }
+    }
+}

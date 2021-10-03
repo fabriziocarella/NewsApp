@@ -1,0 +1,59 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-color: white 1px;
+    padding: 10px;
+    border: solid;
+    &--title {
+        text-decoration: none;
+        font-size: 1em;
+    }
+    &--description {
+        font-size: 0.9em;
+        text-align: left;
+    }
+    &--content {
+        font-size: 0.8em;
+        text-align: left;
+
+    }    
+    img {
+        align-self: center;
+        margin: 5px;
+        width: 100%;
+        border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    
+}
+
+// Media Queries
+// TABLET
+@media (min-width: 769px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .card {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .card {
+        width: 24%;
+    }
+}

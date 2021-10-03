@@ -1,0 +1,7 @@
+@mixin centerAllNavFooter {
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
