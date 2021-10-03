@@ -15,14 +15,14 @@ class Home extends Component {
   }
   render() {
     return (
-      <div>
-        <h1>Add yor username</h1>
+      <div className="home">
+        <h2>Add your username</h2>
         <form onSubmit={this.handleSubmit}>
           <label>Username:</label>
           <input type="text" ref={this.name} placeholder="Username" />
           <userContext.Consumer>
             {({ user, login }) =>
-              <input type="submit" value="Add!" onClick={() => login(this.name.current.value)} />
+              <input type="submit" className="button" value="Add!" onClick={() => login(this.name.current.value)} />
             }
           </userContext.Consumer>
 

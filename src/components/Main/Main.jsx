@@ -32,7 +32,7 @@ class Main extends Component {
         </>)
     }
     return (
-      <main>
+      <main className="main">
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/home" component={Home} />

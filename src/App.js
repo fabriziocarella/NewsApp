@@ -6,6 +6,7 @@ import { userContext } from './context/userContext';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
+import './styles/styles.scss'
 
 
 export class App extends Component {
@@ -29,7 +30,7 @@ export class App extends Component {
       logout: this.logout
     }
     return (
-      <div className="App">
+      <div className="app">
         <BrowserRouter>
           <userContext.Provider value={value}>
             <Header />
